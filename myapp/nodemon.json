@@ -1,0 +1,10 @@
+
+{
+  "env": {
+    "MONGODB_USR": "dbuser",
+    "MONGODB_PWD": "dbpwd09",
+    "MONGODB_CLUSTER": "boomongocluster-rcqr2.azure.mongodb.net",
+    "MONGODB_DBNAME": "node-angular"
+  },
+  "ext": "json,ts,html,css,js"
+}

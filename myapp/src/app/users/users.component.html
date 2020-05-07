@@ -1,0 +1,10 @@
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let user of usersList">
+    <mat-expansion-panel-header>
+      <mat-panel-title>{{user.email}}</mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>{{user._id}}</p>
+    <br>
+    <button mat-button (click)="onDeleteUser(user.email)">Delete</button>
+  </mat-expansion-panel>
+</mat-accordion>

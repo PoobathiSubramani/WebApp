@@ -1,0 +1,25 @@
+<form #f="ngForm">
+  <mat-form-field>
+    <input matInput placeholder="Enter your name here..." ngModel name="userName">
+  </mat-form-field>
+  <mat-form-field>
+  <input matInput placeholder={{msg}} ngModel name="userAge">
+  </mat-form-field>
+  <br>
+  <span>
+    <button mat-raised-button type="submit" (click)="onSubmitName(f)">Enter</button>
+    <button mat-raised-button color="primary" type="submit" (click)="onSettingName(f)">Message Me</button>
+    <span>
+      <button mat-raised-button color="warn" type="submit">login</button>
+
+      <button mat-raised-button color="warn" type="submit">signup</button>
+      <!--
+      <a href="/login">Login</a>
+      <a href="/signup">Signup</a>
+      -->
+
+    </span>
+
+  </span>
+</form>
+{{msg}}
